@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamepad Joystick Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gamepad Joystick Tester</h1>
+    <p class="description">请连接您的游戏手柄并按下任意键以开始</p>
+
+    <div class="main-content">
+        <div class="test-area test-area-centered">
+            <div class="controls">
+                <label for="gamepad-select">选择手柄：</label>
+                <select id="gamepad-select"></select>
+            </div>
+        
+            <div class="info">
+                <div class="axis-info">
+                    <h2>左摇杆</h2>
+                    <p>X轴: <span id="left-x">0.00</span></p>
+                    <p>Y轴: <span id="left-y">0.00</span></p>
+                    <p>半径: <span id="left-radius">0.00</span></p>
+                    <p>错误率: <span id="left-error">0.00%</span></p>
+                </div>
+                <div class="axis-info">
+                    <h2>右摇杆</h2>
+                    <p>X轴: <span id="right-x">0.00</span></p>
+                    <p>Y轴: <span id="right-y">0.00</span></p>
+                    <p>半径: <span id="right-radius">0.00</span></p>
+                    <p>错误率: <span id="right-error">0.00%</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="joystick-canvases">
+        <div class="canvas-container">
+            <canvas id="joystick-canvas-left" width="400" height="400"></canvas>
+        </div>
+        <div class="canvas-container">
+            <canvas id="joystick-canvas-right" width="400" height="400"></canvas>
+        </div>
+    </div>
+        <p class="d_description">
+        <br>
+        <br>
+        <br>
+        <br>
+            © 美夜赤月-Key赤月神社 All Rights Reserved (https://github.com/Kazane-Akane)
+        </p>
+    <script src="script.js"></script>
+</body>
+</html>
