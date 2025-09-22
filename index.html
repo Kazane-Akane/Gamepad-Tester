@@ -181,7 +181,8 @@
             </div>
 
             <div class="test-section">
-                <h3>摇杆测试</h3>
+            
+                    <h3>摇杆</h3>
                 <div class="stick-values">
                     <div class="stick-value-container">
                         <span class="label">左摇杆:</span>
@@ -198,6 +199,7 @@
                     </div>
                     <div class="stick-value-container">
                         <span class="label">右摇杆:</span>
+                        
                         <div class="stick-svg-wrapper">
                             <svg class="stick-svg" viewBox="0 0 100 100">
                                 <circle class="stick-bg" cx="50" cy="50" r="45"></circle>
@@ -210,9 +212,12 @@
                         <span id="right-stick-value" class="coords">(0.00, 0.00)</span>
                     </div>
                 </div>
+
                 <div class="test-section polling-rate-section">
                     <h3>其他功能</h3>
-                    <button id="open-diagnostics-button" class="action-button">轮询率测试</button>
+                    <button id="open-diagnostics-button" class="action-button">轮询率</button>
+                    <button id="open-crosstalk-button" class="action-button">十字方向键</button>
+
                 </div>
             </div>
         </div>
@@ -244,6 +249,58 @@
             </div>
         </div>
     </div>
+        </div>
+    <div id="polling-rate-modal" class="modal-overlay" style="display: none;">
+        ...
+    </div>
+
+    <div id="crosstalk-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <h2>十字方向键串键测试</h2>
+
+            <div class="crosstalk-settings">
+                <div class="setting-group">
+                    <label for="crosstalk-count-input">可选测试次数:</label>
+                    <input type="number" id="crosstalk-count-input" value="50" min="10" step="10">
+                </div>
+                <div class="setting-group">
+                    <label>可选的上下或左右键测试:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="crosstalk-direction" value="up-down" checked> 上下键</label>
+                        <label><input type="radio" name="crosstalk-direction" value="left-right"> 左右键</label>
+                    </div>
+                </div>
+            </div>
+            <div class="crosstalk-details">
+                <div class="crosstalk-summary">
+      <div class="crosstalk-instructions-container">
+                <h3 id="crosstalk-instructions-toggle">
+                    测试说明 <span id="toggle-arrow" class="toggle-arrow">▶</span>
+                </h3>
+                <div id="crosstalk-instructions-content" class="instructions-content-hidden">
+                    <p>
+                        <strong>串键测试：</strong>按照固定顺序按动方向键，按键顺序自行决定，但需固定，比如“上下上下”或“左右左右”。快速按压至少50次后，观察按键记录，是否出现固定顺序之外的按键。如若出现，则证明方向键存在串键问题。
+                    </p>
+                    <p>
+                        <strong>搓招准确度：</strong>建议选择100次或200次测试次数，按照搓招顺序快速、重复按动按键。测试完成后，观察次数统计，看是否会出现搓招之外的按键，或者某个按键的次数出现明显偏差。用这种方法可以测试搓招准确性。
+                    </p>
+                </div>
+            </div>
+                    <h3>统计结果</h3>
+                    <p id="crosstalk-result-text">等待测试...</p>
+                </div>
+                
+                <h3>按键记录 (共 <span id="crosstalk-current-count">0</span> 次)</h3>
+                <ul id="crosstalk-records-list" class="records-list">
+                </ul>
+            </div>
+            <div class="modal-buttons">
+                <button id="start-crosstalk-button" class="action-button">开始测试</button>
+                <button id="close-crosstalk-button" class="close-button">关闭</button>
+            </div>
+        </div>
+    </div>
+    <div id="circle-test-modal" class="modal">
         <p class="d_description">
             © 美夜赤月-Key赤月神社 All Rights Reserved (https://github.com/Kazane-Akane)
         </p>

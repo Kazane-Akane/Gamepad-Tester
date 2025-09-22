@@ -1,1 +1,618 @@
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background-color:#2c2f33;color:#e8e8e8;display:flex;flex-direction:column;align-items:center;padding:20px;margin:0;min-height:100vh}h1{color:#fff;font-size:2.5em;margin-bottom:10px}.description{font-size:1.1em;color:#b0b0b0;text-align:center;margin-bottom:40px;max-width:600px}.d_description{font-size:15px;color:#b0b0b0;text-align:center;margin-bottom:0;margin-top:auto;max-width:600px}.main-content{display:flex;gap:30px;width:100%;max-width:1200px;justify-content:center;flex-wrap:wrap}.gamepad-svg-container{width:50%;max-width:600px;display:flex;flex-direction:column;align-items:center}.gamepadView{width:100%;max-width:500px;display:block;margin:20px auto}svg{display:block;width:100%}.active-button{fill:#2ecc71!important;stroke:#27ae60!important}.active-stick{stroke:#3498db!important;fill:#3498db!important}.test-area{width:50%;max-width:450px;padding:20px;background-color:#383c41;border-radius:8px;border:1px solid#444}.dinput-sections-wrapper{max-width:650px;padding:20px;background-color:#383c41;border-radius:8px;border:1px solid#444}.test-area-centered{width:100%;max-width:600px;margin-top:20px;background:none;border:none;padding:0}.test-section h3{border-bottom:1px solid#444;padding-bottom:10px;margin-top:20px;margin-bottom:15px;color:#fff}.stick-values,.trigger-values,.vibration-controls{display:flex;flex-direction:column;gap:15px}.stick-value-container,.trigger-group,.vibration-group{display:flex;align-items:center;gap:10px}.label{font-weight:bold;color:#b0b0b0;min-width:80px}progress{width:100%;height:15px;-webkit-appearance:none;appearance:none;background-color:#555;border-radius:5px}progress::-webkit-progress-bar{background-color:#555;border-radius:5px}progress::-webkit-progress-value{background-color:#f39c12;border-radius:5px}input[type="range"]{flex-grow:1}.vibration-controls{flex-direction:row;justify-content:space-between;gap:20px}.vibration-left,.vibration-right{flex:1;padding:15px;border:1px solid#444;border-radius:8px;background-color:#383c41}.vibration-left h4,.vibration-right h4{margin-top:0;border-bottom:1px solid#555;padding-bottom:5px}.vibration-left button,.vibration-right button{width:100%;padding:10px;font-size:1em;font-weight:bold;background-color:#e74c3c;color:white;border:none;border-radius:5px;cursor:pointer;transition:background-color 0.2s;margin-top:10px}.vibration-left button:hover,.vibration-right button:hover{background-color:#c0392b}.tabs-container{display:flex;justify-content:center;gap:10px;margin-bottom:20px}.tab-button{padding:10px 15px;border:1px solid#444;border-radius:5px;background-color:#383c41;color:#e8e8e8;cursor:pointer;transition:background-color 0.2s}.tab-button.active{background-color:#2ecc71;color:#fff;border-color:#27ae60}.gamepad-info{border:1px solid#444;padding:15px;border-radius:8px;margin-top:10px;background-color:#383c41}.gamepad-status{font-weight:bold;margin-bottom:5px}.stick-svg-wrapper{width:100px;height:100px;border:1px solid#444;border-radius:50%;display:flex;align-items:center;justify-content:center}.stick-svg{width:100%;height:100%}.stick-bg{fill:#555;stroke:#e8e8e8;stroke-width:1}.stick-puck{fill:#e74c3c;stroke:#c0392b;stroke-width:2}.coords{min-width:80px;text-align:right}.button-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.button-item{display:flex;align-items:center;justify-content:space-between;padding:8px;background-color:#44494d;border-radius:4px}.button-indicator{width:15px;height:15px;border-radius:50%;background-color:#e74c3c;border:2px solid#c0392b;transition:background-color 0.2s,border-color 0.2s}.button-indicator.active-button{background-color:#2ecc71;border-color:#27ae60}.modal-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.75);display:flex;justify-content:center;align-items:center;z-index:1000;transition:opacity 0.3s ease-in-out}.modal-content{background-color:#383c41;padding:30px;border-radius:10px;max-width:500px;width:90%;box-shadow:0 5px 15px rgba(0,0,0,0.5);position:relative;border:1px solid#444;display:flex;flex-direction:column;gap:15px}.modal-content h2{text-align:center;color:#fff;margin-top:0}#modal-countdown{text-align:center;font-size:1.1em;font-weight:bold;color:#2ecc71}.polling-rate-details{display:flex;flex-direction:column;gap:10px}.polling-rate-summary{background-color:#44494d;padding:10px;border-radius:5px;border:1px solid#555}.polling-rate-summary p{margin:5px 0}.records-list{max-height:200px;overflow-y:auto;list-style-type:none;padding:0;margin:0;background-color:#2c2f33;border-radius:5px;border:1px solid#444}.records-list li{padding:8px 10px;border-bottom:1px solid#444;font-family:monospace;font-size:0.9em}.records-list li:last-child{border-bottom:none}.modal-buttons{display:flex;justify-content:space-between;align-items:center}.action-button{background-color:#2ecc71;color:#fff;border:none;padding:10px 20px;border-radius:5px;font-size:1em;cursor:pointer;transition:background-color 0.2s ease}.close-button{background-color:#e74c3c;color:#fff;border:none;padding:10px 20px;border-radius:5px;font-size:1em;cursor:pointer;transition:background-color 0.2s ease}.close-button:hover{background-color:#c0392b}input[type="range"]{-webkit-appearance:none;background:transparent;width:100%}input[type="range"]::-webkit-slider-runnable-track{width:100%;height:8px;background:#555;border-radius:4px;cursor:pointer}input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;height:20px;width:20px;border-radius:50%;background:#2ecc71;cursor:pointer;margin-top:-6px;border:2px solid#27ae60}.vibration-controls input[type="range"]{width:100%}.tab-button.active-button-prompt{background-color:#34495e;color:#e8e8e8;border-color:#2980b9;box-shadow:0 0 10px#2980b9;animation:pulse 1.5s infinite}@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}.axis-item-container{background-color:#3e4147;border:1px solid#5d626c;border-radius:8px;padding:5px 15px;transition:all 0.2s ease-in-out;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 5px rgba(0,0,0,0.2)}.axis-item-container.active-button{background-color:#4CAF50;border-color:#4CAF50;transform:translateY(-2px);box-shadow:0 4px 8px rgba(0,0,0,0.3)}.axis-value-indicator{font-family:'Courier New',Courier,monospace;font-size:1em;font-weight:bold;color:#e8e8e8;background-color:#2c2f33;padding:5px 10px;border-radius:4px;min-width:80px;text-align:right}#dinput-axis-list{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #2c2f33;
+    color: #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1.1em;
+    color: #b0b0b0;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+.d_description {
+    font-size: 15px;
+    color: #b0b0b0;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: auto;
+    max-width: 600px;
+}
+/* 新增：主内容两栏布局 */
+.main-content {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    flex-wrap: wrap; /* 允许换行，以适应移动设备 */
+}
+
+/* 新增：左侧SVG容器 */
+.gamepad-svg-container {
+    width: 50%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* SVG容器样式 */
+.gamepadView {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+}
+
+svg {
+    display: block;
+    width: 100%;
+}
+
+/* 按钮按下时的样式 */
+.active-button {
+    fill: #2ecc71 !important; /* 绿色 */
+    stroke: #27ae60 !important;
+}
+
+/* 摇杆移动时的样式 */
+.active-stick {
+    stroke: #3498db !important; /* 蓝色 */
+    fill: #3498db !important;
+}
+
+/* 新增：右侧测试区域样式 */
+.test-area {
+    width: 50%;
+    /* 修改：增加max-width */
+    max-width: 450px;
+    padding: 20px;
+    background-color: #383c41;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+.dinput-sections-wrapper {
+    /*    width: 50%;*/
+    /* 修改：增加max-width */
+    max-width: 650px;
+    padding: 20px;
+    background-color: #383c41;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+/* 新增：居中容器 */
+.test-area-centered {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.test-section h3 {
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.stick-values,
+.trigger-values,
+.vibration-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.stick-value-container,
+.trigger-group,
+.vibration-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.label {
+    font-weight: bold;
+    color: #b0b0b0;
+    min-width: 80px;
+}
+
+progress {
+    width: 100%;
+    height: 15px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #555;
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #f39c12;
+    border-radius: 5px;
+}
+
+input[type="range"] {
+    flex-grow: 1;
+}
+
+.vibration-controls {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.vibration-left,
+.vibration-right {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #383c41;
+}
+
+.vibration-left h4,
+.vibration-right h4 {
+    margin-top: 0;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+}
+
+.vibration-left button,
+.vibration-right button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+.vibration-left button:hover,
+.vibration-right button:hover {
+    background-color: #c0392b;
+}
+
+
+/* 新增：设备切换选项卡样式 */
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #383c41;
+    color: #e8e8e8;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.tab-button.active {
+    background-color: #2ecc71;
+    color: #fff;
+    border-color: #27ae60;
+}
+
+/* 手柄信息容器 */
+.gamepad-info {
+    border: 1px solid #444;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: #383c41;
+}
+
+.gamepad-status {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* 新增：右侧摇杆图表样式 */
+.stick-svg-wrapper {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #444;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stick-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.stick-bg {
+    fill: #555;
+    stroke: #e8e8e8;
+    stroke-width: 1;
+}
+
+.stick-puck {
+    fill: #e74c3c;
+    stroke: #c0392b;
+    stroke-width: 2;
+}
+
+.coords {
+    min-width: 80px;
+    text-align: right;
+}
+
+/* 新增：按钮网格和指示器样式 */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.button-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #44494d;
+    border-radius: 4px;
+}
+
+.button-indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+    border: 2px solid #c0392b;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.button-indicator.active-button {
+    background-color: #2ecc71;
+    border-color: #27ae60;
+}
+
+/* 新增：弹窗样式 */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal-content {
+    background-color: #383c41;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    border: 1px solid #444;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-content h2 {
+    text-align: center;
+    color: #fff;
+    margin-top: 0;
+}
+
+#modal-countdown {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #2ecc71;
+}
+
+.polling-rate-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.polling-rate-summary {
+    background-color: #44494d;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+}
+
+.polling-rate-summary p {
+    margin: 5px 0;
+}
+
+.records-list {
+    max-height: 200px;
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #2c2f33;
+    border-radius: 5px;
+    border: 1px solid #444;
+}
+
+.records-list li {
+    padding: 8px 10px;
+    border-bottom: 1px solid #444;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+.records-list li:last-child {
+    border-bottom: none;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.action-button {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+
+.close-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.close-button:hover {
+    background-color: #c0392b;
+}
+
+/* 新增：轮询率和串键测试弹窗的内部样式 */
+.polling-settings, .crosstalk-settings {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.setting-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+input[type="number"] {
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #444;
+    color: #e8e8e8;
+}
+
+.records-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #444;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.records-list li {
+    padding: 5px;
+    border-bottom: 1px solid #555;
+}
+
+.records-list li:last-child {
+    border-bottom: none;
+}
+/* 震动滑块条样式 */
+input[type="range"] {
+    /* 确保滑块在不同的浏览器中显示一致 */
+    -webkit-appearance: none;
+    background: transparent; /* 隐藏默认背景 */
+    width: 100%;
+}
+
+/* 轨道样式 */
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    background: #555; /* 轨道的背景颜色 */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* 滑块（拇指）样式 */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #2ecc71; /* 滑块的颜色，可以修改为其他颜色 */
+    cursor: pointer;
+    margin-top: -6px; /* 调整滑块位置使其居中 */
+    border: 2px solid #27ae60; /* 滑块的边框颜色 */
+}
+/* 修改震动滑块条的宽度 */
+.vibration-controls input[type="range"] {
+    /* 将 width 的值从 100% 调整为你想要的长度，
+       例如 80% 或一个具体的像素值。
+    */
+    width: 100%; 
+}
+/* 新增：非活跃但有活动的手柄选项卡高亮提示样式 */
+.tab-button.active-button-prompt {
+    background-color: #34495e; /* 深蓝色背景 */
+    color: #e8e8e8;
+    border-color: #2980b9;
+    box-shadow: 0 0 10px #2980b9; /* 蓝色外发光 */
+    animation: pulse 1.5s infinite; /* 脉冲动画 */
+}
+
+/* 脉冲动画定义 */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* 新增：Dinput 摇杆/轴值的按钮样式 */
+.axis-item-container {
+    background-color: #3e4147;
+    border: 1px solid #5d626c;
+    border-radius: 8px;
+    padding: 5px 15px;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.axis-item-container.active-button {
+    background-color: #4CAF50; /* 激活时的背景色 */
+    border-color: #4CAF50; /* 激活时的边框颜色 */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 新增：轴值文本样式 */
+.axis-value-indicator {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    font-weight: bold;
+    color: #e8e8e8;
+    background-color: #2c2f33;
+    padding: 5px 10px;
+    border-radius: 4px;
+    min-width: 80px;
+    text-align: right;
+}
+
+/* 之前添加的 grid 布局规则保持不变 */
+#dinput-axis-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* 新增：串键测试结果颜色样式 */
+.crosstalk-result-green {
+    color: #2ecc71; /* 绿色 */
+}
+
+.crosstalk-result-orange {
+    color: #e67e22; /* 橙色 */
+}
+
+.crosstalk-result-blue {
+    color: #3498db; /* 蓝色 */
+}
+
+.crosstalk-result-red {
+    color: #e74c3c; /* 红色 */
+}
+/* 新增：串键记录列表项的警示颜色 */
+.crosstalk-record-red {
+    color: #e74c3c; /* 红色 */
+}
+/* 新增：串键测试说明容器样式 */
+.crosstalk-instructions-container {
+    background-color: #3e4147;
+    border: 1px solid #5d626c;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+/* 新增：可收起说明容器样式 */
+.crosstalk-instructions-container {
+    cursor: pointer; /* 鼠标悬停时显示为小手 */
+}
+
+.crosstalk-instructions-container h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-arrow {
+    transition: transform 0.2s ease-in-out;
+    display: inline-block;
+}
+
+.toggle-arrow.rotate {
+    transform: rotate(90deg);
+}
+
+.instructions-content-hidden {
+    display: none;
+}
+
