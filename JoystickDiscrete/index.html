@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamepad Joystick Discrete Testing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gamepad Joystick Discrete Testing</h1>
+<br>
+    <div id="controls">
+        <div class="control-row">
+            <label for="gamepad-select">选择设备:</label>
+            <select id="gamepad-select"></select>
+        </div>
+        <div class="control-row">
+            <label for="sample-points-select">采样点总数:</label>
+            <select id="sample-points-select"></select>
+        </div>
+                  <p class="instruction">将手柄用左手握住，右手用手心快速地搓动摇杆进行测试<br>采样结束后会进行评级，有 极优，优，良，差 四个等级</p>
+        <div class="control-row">
+            <button id="start-button" class="button start-button">开始测试</button>
+            <button id="stop-button" class="button stop-button" style="display: none;">停止测试</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="plot-section">
+            <h2>左摇杆</h2>
+            <canvas id="left-stick-canvas" width="500" height="500"></canvas>
+            <div id="left-stick-status" class="status"></div>
+            <div id="left-stick-rating" class="rating"></div>
+        </div>
+        <div class="plot-section">
+            <h2>右摇杆</h2>
+            <canvas id="right-stick-canvas" width="500" height="500"></canvas>
+            <div id="right-stick-status" class="status"></div>
+            <div id="right-stick-rating" class="rating"></div>
+        </div>
+    </div>
+            <p class="d_description">
+            <br>
+            <br>
+            © 美夜赤月-Key赤月神社 All Rights Reserved (https://github.com/Kazane-Akane)
+        </p>
+    <script src="script.js"></script>
+</body>
+</html>
